@@ -1,0 +1,28 @@
+.client-container {
+    display: flex;
+    column-gap: 30px;
+}
+
+.client-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    color: var(--icon-color);
+
+    transition: border var(--transition-dur-and-funk), color var(--transition-dur-and-funk);
+}
+
+.client-list-link:hover,
+.client-list-link:focus {
+    border: 1px solid var(--chenj-color);
+    color: var(--chenj-color);
+
+}
+
+.client-list-icon {
+    fill: currentColor;
+}

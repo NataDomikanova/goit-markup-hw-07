@@ -1,0 +1,103 @@
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ececec;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-website {
+    display: flex;
+    column-gap: 50px;
+}
+
+/* .logo{
+    margin-right: 93px;
+    color: var(--chenj-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+} */
+
+.logo .title {
+    color: var(--blac-color);
+}
+
+.logo .title-f {
+    color: var(--mane-color);
+}
+
+.navigation-website a {
+    position: relative;
+    color: var(--title-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color var(--transition-dur-and-funk);
+
+}
+
+.contact a {
+    color: var(--text-color);
+
+    transition: color var(--transition-dur-and-funk);
+}
+
+.contact {
+    display: flex;
+    margin-left: auto;
+    column-gap: 50px;
+}
+
+.navigation-website a:hover,
+.navigation-website a:focus,
+.contact a:hover,
+.contact a:focus {
+    color: var(--chenj-color);
+}
+
+.navigation-website a,
+.contact {
+    font-weight: 500;
+    line-height: 1.71;
+    letter-spacing: 0.02em
+}
+
+.navigation-website .current {
+    color: var(--chenj-color);
+}
+
+
+
+.link.current::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--chenj-color);
+    border-radius: 2px;
+
+}
+
+.contact-nav {
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
