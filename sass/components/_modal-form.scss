@@ -1,7 +1,8 @@
 .modal-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    // font-weight: 700;
+    // font-size: 20px;
+    // line-height: 1.15;
+    @include font(20px, 700, 1.15);
     text-align: center;
 
     color: var(--title-color);
@@ -23,9 +24,10 @@
 
 .modal-field-desk {
     display: block;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
+    // font-weight: 400;
+    // font-size: 12px;
+    // line-height: 1.16;
+    @include font(12px, 400, 1.16);
     letter-spacing: 0.01em;
     color: var(--text-color);
     margin-bottom: 4px;
@@ -43,12 +45,12 @@
     padding-left: 42px;
 
     transition: border-color var(--transition-dur-and-funk);
-}
 
-.modal-input:focus,
-.modal-message:focus {
-    outline: none;
-    border-color: var(--chenj-color);
+    &:focus,
+    &:focus {
+        outline: none;
+        border-color: var(--chenj-color);
+    }
 }
 
 .modal-icon {
@@ -75,15 +77,16 @@
     resize: none;
 
     transition: border-color var(--transition-dur-and-funk);
-}
 
-.modal-message::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-
-    color: rgba(117, 117, 117, 0.5);
+    &::placeholder {
+        // font-weight: 400;
+        // font-size: 12px;
+        // line-height: 1.16;
+        @include font(12px, 400, 1.16);
+        letter-spacing: 0.01em;
+    
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
 
 .modal-check-field {
@@ -94,6 +97,10 @@
 
     font-weight: 400;
     line-height: 1.71;
+
+    a {
+        color: var(--chenj-color);
+    }
 }
 
 .modal-check {
@@ -108,27 +115,20 @@
     border-radius: 3px;
     cursor: pointer;
     margin-right: 8px;
+    .modal-check:checked+& {
+            background-color: var(--chenj-color);
+            background-origin: border-box;
+            border-color: var(--chenj-color);
+        }
 }
 
 .modal-checkbox-icon {
     display: none;
     fill: var(--mane-color);
-}
-
-.modal-check:checked+.modal-checkbox {
-    background-color: var(--chenj-color);
-    background-origin: border-box;
-    border-color: var(--chenj-color);
-}
-
-.modal-check:checked+.modal-checkbox .modal-checkbox-icon {
-    display: block;
-    fill: var(--mane-color);
-
-}
-
-.modal-check-field a {
-    color: var(--chenj-color);
+    .modal-check:checked+.modal-checkbox & {
+            display: block;
+            fill: var(--mane-color);
+        }
 }
 
 .modal-btn-submit {

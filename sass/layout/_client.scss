@@ -14,13 +14,12 @@
     color: var(--icon-color);
 
     transition: border var(--transition-dur-and-funk), color var(--transition-dur-and-funk);
-}
 
-.client-list-link:hover,
-.client-list-link:focus {
-    border: 1px solid var(--chenj-color);
-    color: var(--chenj-color);
-
+    &:hover,
+    &:focus {
+        border: 1px solid var(--chenj-color);
+        color: var(--chenj-color);
+            }
 }
 
 .client-list-icon {

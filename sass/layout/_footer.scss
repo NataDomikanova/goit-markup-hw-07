@@ -8,6 +8,7 @@
 
 address {
     margin-top: 20px;
+    font-style: normal;
 }
 
 .footer-container {
@@ -19,29 +20,23 @@ address {
     margin-right: 70px;
 }
 
-.contact-footer:not(:last-child) {
-    margin-bottom: 9px;
-}
-
-.contact-footer a {
-    transition: color var(--transition-dur-and-funk)
-}
-
-.contact-footer a:hover,
-.contact-footer a:focus {
-    color: var(--chenj-color);
-}
-
-.contact-footer .link {
-    color: var(--text-color);
-}
-
-.contact-footer .map {
-    color: var(--mane-color);
-}
-
-address {
-    font-style: normal;
+.contact-footer {
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    a {
+        transition: color var(--transition-dur-and-funk);
+        &:hover,
+        &:focus {
+            color: var(--chenj-color);
+        }
+    }
+    .link {
+        color: var(--text-color);
+    }
+    .map {
+        color: var(--mane-color);
+    }
 }
 
 .addres-site {
@@ -58,9 +53,10 @@ address {
 
 .social-footer-title {
     color: var(--mane-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.17;
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.17;
+    @include font(14px, 700, 1.17);
     text-transform: uppercase;
 
     margin-bottom: 20px;
@@ -69,17 +65,16 @@ address {
 .social-address-list {
     display: flex;
     column-gap: 10px;
-
 }
 
 .address-icon {
     background-color: rgba(255, 255, 255, 10%);
     border-radius: 50%;
     color: var(--mane-color);
-}
 
-.address-icon .social-list-icon {
-    fill: var(--mane-color);
+    .social-list-icon {
+        fill: var(--mane-color);
+        }
 }
 
 .footer-form {
@@ -96,14 +91,14 @@ address {
     color: rgba(255, 255, 255, 0.6);
     padding: 16px 15px;
     margin-right: 12px;
-}
 
-.footer-form-input::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-
-    color: rgba(255, 255, 255, 0.6);
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+    
+        color: rgba(255, 255, 255, 0.6);
+        }
 }
 
 .modal-submit {
@@ -112,9 +107,10 @@ address {
     border: none;
     border-radius: 4px;
     font-family: Roboto, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    // font-weight: 700;
+    // font-size: 16px;
+    // line-height: 1.88;
+    @include font(16px, 700, 1.88);
     align-self: center;
     letter-spacing: 0.06em;
     margin: 0 auto;
@@ -123,12 +119,11 @@ address {
     padding: 10px 28px;
 
     transition: background-color var(--transition-dur-and-funk), box-shadow var(--transition-dur-and-funk);
-}
-
-.modal-submit:hover,
-.modal-submit:focus {
-    background-color: #188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
 }
 
 .modal-submit-footer {

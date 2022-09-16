@@ -29,9 +29,11 @@
 
 .modal-close-icon{
     transition: fill var(--transition-dur-and-funk);
+
+    &:hover,
+    &:focus {
+        fill: var(--chenj-color);
+    }
 }
 
-.modal-close-icon:hover,
-.modal-close-icon:focus {
-    fill: var(--chenj-color);
-}
+
