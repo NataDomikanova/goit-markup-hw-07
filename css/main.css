@@ -288,14 +288,14 @@ body {
 .navigation-website a:hover, .navigation-website a:focus {
   color: var(--chenj-color);
 }
-.navigation-website a,
-.navigation-website .contact {
+.navigation-website .current {
+  color: var(--chenj-color);
+}
+
+.navigation-website a, .contact {
   font-weight: 500;
   line-height: 1.71;
   letter-spacing: 0.02em;
-}
-.navigation-website .current {
-  color: var(--chenj-color);
 }
 
 .logo__title {

@@ -31,15 +31,15 @@
             color: var(--chenj-color);
         }
     }
-    a,
-    .contact {
-        font-weight: 500;
-        line-height: 1.71;
-        letter-spacing: 0.02em
-    }
-    .current {
+        .current {
         color: var(--chenj-color);
         }
+}
+
+.navigation-website a, .contact {
+    font-weight: 500;
+    line-height: 1.71;
+    letter-spacing: 0.02em
 }
 
 // .logo {
@@ -53,18 +53,17 @@
 
 .logo__title{
     color: var(--blac-color);
-
 }
 
 .logo__title-f{
     color: var(--mane-color);
-
 }
 
 .contact {
     display: flex;
     margin-left: auto;
     column-gap: 50px;
+    
     a {
         color: var(--text-color);
     
@@ -93,6 +92,7 @@
 .contact-nav {
     display: flex;
     align-items: center;
+    
 }
 
 .contact-icon {
